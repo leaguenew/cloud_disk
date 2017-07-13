@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<email>
+
+	<subject>
+		echoii激活验证
+	</subject>
+		
+	<content>
+		<!--  title><![CDATA[<h3>欢迎注册先进云echoii网盘，请单击以下链接完成激活账户，完成注册。如果链接无法点击，请将其复制粘贴到浏览器中转到地址.</h3>]]></title-->
+		<title><![CDATA[<h3>请单击以下链接以完成密码找回。此链接只在十分钟内有效.</h3>]]></title>
+		<link><![CDATA[ <a href='{url}'>click this link to find back your password</a> ]]></link> 
+	</content>
+
+</email>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/title_back" >
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:src="@drawable/setting" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/setting"
+            android:src="@drawable/line_left" />
+
+        <TextView
+            android:id="@+id/tvew_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/data_market"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" 
+             />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/exit"
+            android:src="@drawable/line_right" />
+    </RelativeLayout>
+    
+<FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      >
+    
+       <android.support.v4.view.ViewPager
+	      android:id="@+id/market_viewPager"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	     />
+       
+       <RelativeLayout 
+           	android:layout_width="match_parent"
+	   	    android:layout_height="42dp"
+	   	    android:background="#AA9E9E9E"
+	   	    android:layout_gravity="bottom"
+           >
+           <TextView 
+             android:id="@+id/market_recommend_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:textColor="@android:color/white"
+             android:layout_centerVertical="true"
+             android:textSize="16sp"
+             android:text="百度贴吧"
+             />
+             <LinearLayout 
+		   	    android:id="@+id/market_dots"
+		   	    android:layout_width="wrap_content"
+		   	    android:layout_height="wrap_content"
+		   	    android:layout_alignParentRight="true"	 
+		   	    android:orientation="horizontal"	
+		   	    android:layout_centerVertical="true"	   	     	    	   	   
+		   	    >
+		   	    <ImageView 
+		   	        android:id="@+id/first"
+		   	        android:layout_width="12dp"
+		   	        android:layout_height="12dp"
+		   	        />
+		   	      <ImageView 
+		   	        android:id="@+id/second"
+		   	        android:layout_width="12dp"
+		   	        android:layout_height="12dp"
+		   	         android:layout_marginLeft="10dp"
+		   	        />
+		   	        <ImageView 
+		   	        android:id="@+id/third"
+		   	        android:layout_width="12dp"
+		   	        android:layout_height="12dp"
+		   	         android:layout_marginLeft="10dp"
+		   	        />
+		   	          <ImageView 
+		   	        android:id="@+id/fourth"
+		   	        android:layout_width="12dp"
+		   	        android:layout_height="12dp"
+		   	         android:layout_marginLeft="10dp"
+		   	         android:layout_marginRight="15dp"
+		   	        />
+	   		</LinearLayout>
+       </RelativeLayout>
+      
+</FrameLayout>
+
+
+
+ 
+   	<GridView
+        android:id="@+id/market_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="8dp"
+        android:layout_margin="8dp"
+        android:verticalSpacing="8dp" />
+  
+</LinearLayout>

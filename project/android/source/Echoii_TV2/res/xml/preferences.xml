@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+    
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="samba_share"
+        android:summary="@string/file_share_ison"
+        android:switchTextOff="@string/off"
+        android:switchTextOn="@string/on"
+        android:title="@string/file_share" />
+    
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="sync_swich"
+        android:summary="@string/pref_sync_summary"
+        android:switchTextOff="@string/off"
+        android:switchTextOn="@string/on"
+        android:title="@string/pref_sync_title" />
+    
+    <Preference 
+        android:key="set_sync_path"
+        android:title="@string/pref_set_sync_path" 
+        android:summary=""
+        >
+    	<intent 
+    	    android:targetPackage="com.echoii.tv"
+            android:targetClass="com.echoii.tv.SetSyncPahtActivity" />
+    </Preference>
+    
+    <EditTextPreference 
+        android:key="server_ip"
+        android:defaultValue="172.21.7.199:81"
+        android:title="@string/sync_ip_setting_title"
+        android:dialogTitle="@string/sync_ip_setting_title"
+        />
+
+</PreferenceScreen>

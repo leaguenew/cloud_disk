@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Echoii TV</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="file_share">文件共享</string>
+    <string name="file_share_on">ON</string>
+    <string name="file_share_off">OFF</string>
+    <string name="open_echoii">中科甲骨云</string>
+
+</resources>

@@ -1,0 +1,16 @@
+ffmpeg-php依赖于ffmpeg，所以首先需要安装ffmpeg
+
+ 1. 安装x11
+ 安装x11库文件  sudo apt-get install libx11-dev
+ 安装开发头文件   sudo apt-get install xorg-dev
+ 
+ 2. 安装SDL
+ sudo apt-get install libsdl1.2-dev
+ 
+ 3. 安装yasm
+ sudo apt-get install yasm
+ 
+ 4. 安装ffmpeg
+ ./configure 
+ make
+ make install

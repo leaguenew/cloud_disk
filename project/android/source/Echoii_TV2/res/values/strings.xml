@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Echoii TV</string>
+    <string name="settings_title">设置</string>
+    <string name="file_share">文件共享</string>
+    <string name="on">开启</string>
+    <string name="off">关闭</string>
+    <string name="file_share_ison">是否开启文件共享</string>
+    <string name="open_echoii">中科甲骨云</string>
+    <string name="service_opening">正在开启服务，请稍候。。。</string>
+    <string name="service_on">Echoii服务已开启</string>
+    <string name="reset_password">重置密码</string>
+    <string name="sync_path_settings">设置同步路径</string>
+    <string name="sync_ip_setting_title">设置服务器地址</string>
+    <string name="sync_ip_setting_error">ip地址输入不正确</string>
+    <string name="default_path">默认路径：</string>
+    <string name="submit">确定</string>
+    <string name="cancel">取消</string>
+    <string name="data_center_title">家庭数据中心</string>
+    <string name="bottom_cloud_copy">复制</string>
+    <string name="bottom_cloud_delete">删除</string>
+    <string name="bottom_cloud_rename">重命名</string>
+    <string name="bottom_cloud_move">移动</string>
+    <string name="bottom_cloud_share">分享</string>
+    <string name="pref_sync_title">同步家庭数据中心文件</string>
+    <string name="pref_sync_summary">是否从云端同步家庭数据中心的所有文件到本地指定路径</string>
+    <string name="cloud_username">用户名：</string>
+    <string name="cloud_password">密     码：</string>
+    <string name="cloud_login">登录</string>
+    <string name="cloud_login_error">登录失败</string>
+    <string name="cloud_category_all_file">全部文件</string>
+    <string name="cloud_category_bt">BT种子</string>
+    <string name="cloud_category_doc">文档</string>
+    <string name="cloud_category_image">图片</string>
+    <string name="cloud_category_movie">视频</string>
+    <string name="cloud_category_music">音乐</string>
+    <string name="cloud_category_mygroup">我的群</string>
+    <string name="cloud_category_other">其他</string>
+    <string name="cloud_category_share">分享</string>
+    <string name="pref_set_sync_path">设置默认同步路径</string>
+
+</resources>

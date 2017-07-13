@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<email>
+
+	<getbacksubject>
+		echoii找回密码
+	</getbacksubject>
+	
+	<getbackcontent>
+		<title><![CDATA[<h3>请单击以下链接以完成密码找回。如果链接无法点击，请将其复制粘贴到浏览器中转到地址.</h3>]]></title>
+		<link><![CDATA[ <a href='http://www.baidu.com'>link</a> ]]></link> 
+	</getbackcontent>
+	
+</email>	

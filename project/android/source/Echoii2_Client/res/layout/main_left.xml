@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/left_img_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fragment_left_icon" />
+
+        <TextView
+            android:id="@+id/left_tvew_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/left_img_head"
+            android:text="NAME"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+		<ImageView 
+		    android:id="@+id/left_img_divider"
+		    android:layout_width="match_parent"
+		    android:layout_height="5px"
+		    android:src="#b2b2b2"
+		    android:layout_below="@id/left_tvew_name"
+		    android:layout_toRightOf="@id/left_img_head"
+		    />
+		<LinearLayout 
+		    android:id="@+id/left_llayout_size"
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_alignLeft="@+id/left_tvew_name"
+            android:layout_below="@+id/left_img_divider"
+            android:orientation="horizontal"
+		    >
+		    <TextView
+	            android:id="@+id/left_tvew_used_size"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="150MB"
+	             android:textColor="@android:color/white"
+	            android:textSize="15sp" />
+		    <TextView 
+		        android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="/"
+	             android:textColor="@android:color/white"
+	            android:textSize="15sp" 
+		        />
+		   <TextView
+	            android:id="@+id/left_tvew_total_size"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="2GB"
+	             android:textColor="@android:color/white"
+	            android:textSize="15sp" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/left_llayout_size"
+            android:layout_below="@id/left_img_divider"
+            android:layout_marginLeft="10dp"
+		    >
+		    <TextView 
+		        android:id="@+id/left_tvew_expanded"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#a2eaed"
+	            android:textSize="15sp"
+		        android:text="@string/left_expanded"
+		        />
+		   <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#a2eaed"
+	            android:textSize="15sp"
+		        android:text="|"
+		        />
+		    <TextView 
+		        android:id="@+id/left_tvew_buy"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#a2eaed"
+	            android:textSize="15sp"
+		        android:text="@string/left_buy"
+		        />
+		</LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/left_wifi"
+            android:textSize="15sp" />
+        <ToggleButton 
+                android:id="@+id/toggle_wifi"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:layout_marginRight="10dp"
+            	android:background="@drawable/setting_toggle_background"
+            	android:disabledAlpha="0.0"
+            	android:textOn=""
+            	android:textOff=""
+                />
+
+    </RelativeLayout>
+    <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="2px"
+	        android:src="#d0d0d0"
+        />
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp" 
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/left_albums_backup"
+            android:textSize="15sp" />
+ 		 <ToggleButton 
+                android:id="@+id/toggle_backup"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:layout_marginRight="10dp"
+            	android:background="@drawable/setting_toggle_background"
+            	android:disabledAlpha="0.0"
+            	android:textOn=""
+            	android:textOff=""
+                />
+    </RelativeLayout>
+
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+
+    <TextView
+        android:id="@+id/left_tvew_filebrowser"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_file_browser"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_show_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_show_mode"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_localcache_clean"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/left_localcache_clean"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_softlock"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/left_softlock"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_share_accoutbinding"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_share_accoutbinding"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_feedback"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_versionr"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_version"
+        android:textSize="15sp" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:src="#d0d0d0"
+        />
+    <TextView
+        android:id="@+id/left_tvew_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/left_exit"
+        android:textSize="15sp" />
+
+</LinearLayout>

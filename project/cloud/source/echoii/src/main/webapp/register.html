@@ -1,0 +1,111 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Auth</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/auth.css" type="text/css" > 
+    <style type="text/css">
+        html {
+            background-color: #D8DDE8;
+            //background-color: #9FB190;
+        }
+        body {
+            background-color: #D8DDE8;
+            padding-top: 40px;
+        }
+        div.topbar div.fill {
+            background-color: #204066;
+            background-image: url(https://forum.pleaseignore.com/public/style_images/master/branding_bg.png);
+        }
+        .container div.content {
+            background-color: white;
+            padding: 20px;
+            margin: 0 -20px;
+            -webkit-border-radius: 0 0 6px 6px;
+            -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+        }
+    </style>
+    <script src="./js/lib/jquery-1.8.3.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="./js/lib/bootstrap-dropdown.js"></script>
+    <script src="./js/lib/bootstrap-alerts.js"></script>
+    <script src="./js/lib/jquery.validate.bootstrap.js"></script>
+    <script src="./js/lib/jquery.validate.js"></script>
+    <script src="./js/lib/sea.js"></script>	
+		
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                <a class="brand" href="/">Auth</a>
+                <ul class="nav">
+            
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+			<div class="page-header">
+				  <h1>Registration</h1>
+			</div>
+			<p>Please complete this form to register for a new Auth account, please be aware that you are required to confirm your email account so please use a valid address.</p>
+			<br/>
+			<form method='post' action=''>
+			  	
+			  		<div class="alert-message block-message error" style='display:none' >
+						  <p>Oops! Something went wrong; check the following and try again.</p>
+						  <ul class="errorlist"><li>The two password fields didn&#39;t match.</li></ul>
+					</div>
+					
+					<div class="clearfix" id="divName">
+						 <label  for="id_username">Username</label>
+						 <div id="s" class="input">						          
+						       <input id="id_username" type="text" class="required" name="username" maxlength="30" />
+						 </div>
+					</div>
+					<div class="clearfix">
+						 <label for="id_email">E-mail</label>
+							  <div class="input">
+							   		 <input id="id_email" type="text" class="required" name="email" maxlength="75" />
+							  </div>
+					</div>
+					<div class="clearfix">
+						 <label for="id_password1">Password</label>
+						 <div class="input">
+							  <input id="id_password1" type="password" class="required" name="password1" />
+						 </div>
+					</div>
+					<div class="clearfix">
+						 <label for="id_password2">Password (again)</label>
+						 <div class="input">
+							   	 <input id="id_password2" type="password" class="required" name="password2" />
+						 </div>
+					</div>
+   				    <input type="submit" value="Send activation email" class="btn primary" id="regSubmit"/>
+  				
+  				<!-- <input  type="submit" value="Send activation email" class="btn primary"/> -->
+			</form>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+		// Set configuration
+		  seajs.config({
+		    base: "./js/lib/"
+		  });
+        
+       	  seajs.use(['./js/module/register']);
+	    	
+	</script>
+</body>
+</html>

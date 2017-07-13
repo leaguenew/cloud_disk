@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/dc_operation"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="10px"
+            android:layout_height="match_parent"
+            android:src="@drawable/data_center_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:id="@+id/sale_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <Button
+                    android:id="@+id/sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_sale_style"
+                    android:text="@string/list_sale"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+               
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/transfer_save_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <Button
+                    android:id="@+id/transfer_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_save_style"
+                    android:text="@string/list_save"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+               
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/move_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <Button
+                    android:id="@+id/move"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableTop="@drawable/file_move_style"
+                    android:text="@string/list_move"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />               
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/copy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <Button
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_copy_style"
+                    android:text="@string/list_copy"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delete_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_del_style"
+                    android:text="@string/list_del"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rename_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/rename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_rename_style"
+                    android:text="@string/list_rename"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/share_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+               <Button
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_share_style"
+                    android:text="@string/list_share"
+                    android:textSize="16sp"
+                    android:textColor="#666666" />
+               
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dc_operation_more"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="10px"
+            android:layout_height="match_parent"
+            android:src="@drawable/data_center_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/paste_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/paste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_paste_style"
+                    android:text="@string/list_paste"
+                    android:textColor="#666666" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/cancle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:background="@null"
+                    android:drawableTop="@drawable/file_cancel_style"
+                    android:text="@string/list_cancle"
+                    android:textColor="#666666" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

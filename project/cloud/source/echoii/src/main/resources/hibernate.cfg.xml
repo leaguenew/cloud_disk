@@ -1,0 +1,65 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+		<!-- Database connection settings <property name="connection.url">jdbc:mysql://localhost/xbench</property> 
+			<property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property> <property 
+			name="connection.username">root</property> <property name="connection.password">root</property> -->
+		<!-- ccrfox5 172.20.36.45 -->
+		<property name="connection.url">jdbc:mysql://172.21.7.199/echoii_test?autoReconnect=true</property>
+		<!--<property name="connection.url">jdbc:mysql://localhost/echoii_dev</property>-->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.username">test</property>
+		<property name="connection.password">test</property>
+		<property name="validationQuery">SELECT 1</property>     
+   		<property name="testOnBorrow">true</property>      
+
+		<property name="hibernate.c3p0.acquire_increment">1</property>
+		<property name="hibernate.c3p0.validate">true</property>
+		<property name="hibernate.c3p0.idle_test_period">20</property> <!-- seconds -->
+		<property name="hibernate.c3p0.max_size">5</property>
+		<property name="hibernate.c3p0.max_statements">100</property>
+		<property name="hibernate.c3p0.min_size">2</property>
+		<property name="hibernate.c3p0.timeout">90</property> <!-- seconds -->
+		<!-- JDBC connection pool (use the built-in) <property name="connection.pool_size">3</property> -->
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">false</property>
+
+		<!-- Drop and re-create the database schema on startup, validate\update\create\create-drop -->
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="com.echoii.cloud.platform.model.Base" />
+		<mapping class="com.echoii.cloud.platform.model.Box" />
+		<mapping class="com.echoii.cloud.platform.model.File" />
+		<mapping class="com.echoii.cloud.platform.model.Group" />
+		<mapping class="com.echoii.cloud.platform.model.GroupDetail" />
+		<mapping class="com.echoii.cloud.platform.model.GroupFile" />
+		<mapping class="com.echoii.cloud.platform.model.GroupFileRequest" />
+		<mapping class="com.echoii.cloud.platform.model.GroupMember" />
+		<mapping class="com.echoii.cloud.platform.model.Hdc" />
+		<mapping class="com.echoii.cloud.platform.model.HdcFile" />
+		<mapping class="com.echoii.cloud.platform.model.HdcDetail" />
+		<mapping class="com.echoii.cloud.platform.model.HdcBinding" />
+		<mapping class="com.echoii.cloud.platform.model.InBox" />
+		<mapping class="com.echoii.cloud.platform.model.Message" />
+		<mapping class="com.echoii.cloud.platform.model.MessageQueue" />
+		<mapping class="com.echoii.cloud.platform.model.OutBox" />
+		<mapping class="com.echoii.cloud.platform.model.QueueSubscription" />
+		<mapping class="com.echoii.cloud.platform.model.ShareLinkFile" />
+		<mapping class="com.echoii.cloud.platform.model.User" />
+		<mapping class="com.echoii.cloud.platform.model.UserDetail" />
+		<mapping class="com.echoii.cloud.platform.model.TorrentFile" />
+		<mapping class="com.echoii.cloud.platform.model.TorrentTable" />
+
+	</session-factory>
+
+</hibernate-configuration>

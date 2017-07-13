@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.echoii.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.echoii.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.echoii.activity.RegisterActivity"
+            ></activity>
+        <activity 
+            android:name="com.echoii.activity.ForgotPassWordActivity"
+            ></activity>
+        <activity 
+            android:name="com.echoii.activity.MainCloudActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            ></activity>
+        <activity 
+            android:name="com.echoii.activity.LockSettingActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" 
+            ></activity>
+        <activity 
+            android:name="com.echoii.activity.ShareAccountActivity"
+            ></activity>
+        
+         <activity 
+            android:name="com.echoii.activity.UploadPhotoActivity"
+            ></activity>
+         <activity 
+             android:name="com.echoii.activity.VideoPlayActivity"
+             ></activity>
+    </application>
+
+</manifest>

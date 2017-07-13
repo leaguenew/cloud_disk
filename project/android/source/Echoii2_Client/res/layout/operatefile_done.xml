@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/operate_rlayout_paste"
+    android:background="#e6e6e6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 	<ImageView
+	     android:id="@+id/phonelist_line"
+	     android:layout_width="10px"
+	     android:layout_height="match_parent"
+	     android:scaleType="fitXY"
+	     android:src="@drawable/phone_shadow" />
+ 	
+    <RelativeLayout 
+      	android:id="@+id/operate_llayout_paste"
+      	android:layout_toRightOf="@id/phonelist_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+        >
+         <Button 
+	        android:id="@+id/operate_paste"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/list_paste"
+	        android:background="@null"
+	        android:drawableTop="@drawable/file_paste_style"
+	        android:layout_marginTop="45dp"
+	        android:textSize="15sp"
+	        android:textColor="@color/fonts_operate_normal"
+	        />
+	    <Button 
+	        android:id="@+id/operate_cancel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/list_cancle"
+	        android:background="@null"
+	        android:drawableTop="@drawable/file_cancel_style"
+	         android:layout_marginTop="45dp"
+	        android:layout_below="@id/operate_paste"
+	        android:textSize="15sp"
+	        android:textColor="@color/fonts_operate_normal"
+	        />
+    </RelativeLayout>
+   
+
+</RelativeLayout>

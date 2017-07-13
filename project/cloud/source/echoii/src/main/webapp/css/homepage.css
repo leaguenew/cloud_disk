@@ -1,0 +1,182 @@
+shtml,body,div,span,h1,h2,h3,h4,p,img,strong,ol,ul,li {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+}
+
+html {
+	background-color: #D8DDE8;
+}
+
+body {
+	/* background: #F4F4F4; */
+	background: #FFFFFF;
+	color: #404040;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+	padding-top: 40px;
+}
+
+img {
+	border: 0 none;
+}
+
+element.style {
+	margin-left: 200px;
+	padding-top: 15px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+div.input {
+	margin-bottom: 8px;
+	width: 500px;
+	height: 40px;
+}
+
+#hp-topbar {
+	height: 100px;
+	overflow: visible;
+	position:absolute;
+	top: 0; 
+	left:0;
+	right:0;
+	z-index: 10000;
+}
+
+#hp-topbar .fill {
+	background: url(../image/topbar_bg.gif) 0 0 repeat-x;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1)
+		inset;
+}
+
+#hp-topbar .banner{
+	margin-top: -2px;
+	height: 300px;
+}
+
+#hp-container {
+	width: 940px;
+}
+
+#hp-topbar .banner{
+	background: #16ab84; 
+} 
+.logo{
+	margin-left: 60px;
+}
+#hp-container .content {
+	margin-top: 380px;
+}
+
+#loginDoor {
+	height: 32px;
+}
+
+#registDoor {
+	height: 32px;
+}
+
+#moving_tab {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#moving_tab span {
+	position: relative;
+	z-index: 10;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#hp-bd {
+	float: left;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+#login-box {
+	float: left;
+	display: none
+}
+
+#register-box {
+	float: left;
+	display: none
+}
+
+#login-form {
+	margin-left: 20px;
+}
+
+#login-form a {
+	margin-left: 80px;
+}
+
+#login-form .rem-forget-box {
+	margin-bottom: 0px;
+	height: 30px;
+}
+
+#login-form .rem-forget-box span {
+	margin-left: 15px;
+}
+
+#hp-login-checkbox {
+	margin-top: 0px;
+}
+
+#login-code {
+	width: 100px;
+}
+
+#loginSubmit {
+	width: 145px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+#register-form {
+	margin-left: 20px;
+}
+
+#regSubmit {
+	width: 145px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.textbox-border {
+	border-style: none none solid none;
+	border-width: 3px;
+	border-color: #339966;
+}
+
+.login-show-code {
+	color: Red;
+	font-size: 15px;
+	height: 25px;
+	width: 40px;
+}
+
+#reg-checkbox{
+	margin-top: -4px;
+}
+
+form label.error {
+	color: Red;
+	font-size: 15px;
+	height: 26px;
+	text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+}

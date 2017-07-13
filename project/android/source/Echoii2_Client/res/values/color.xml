@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="RoyalBlue">#4169E1</color> <!-- 皇家蓝/宝蓝 -->
+    <color name="DodgerBlue">#1E90FF</color> <!-- 闪亮蓝 -->
+    <color name="main_title">#363640</color> <!-- 标题背景色 -->
+    <color name="bottom_selected_back">#1a1717</color> <!-- 底部栏选种时背景色 -->
+    <color name="bottom_unselected_back">#34343e</color> <!-- 底部栏未选种时背景色 -->
+    <color name="fonts_selected_color">#017f9c</color> <!-- 底部栏被选中时字体的颜色-->
+    <color name="fonts_operate_selected">#045360</color> <!-- 对文件操作时选中的文字颜色 -->
+    <color name="fonts_operate_normal">#666666</color> <!-- 文字未选中时的颜色 -->
+    <color name="fonts_operate_unused">#b7b7b7</color> <!-- 不能被使用时的文字颜色 -->
+    <color name="orange">#FF4500</color>
+</resources>

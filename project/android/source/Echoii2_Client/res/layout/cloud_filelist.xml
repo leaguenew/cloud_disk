@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_common" />
+
+    <ImageView 
+        android:id="@+id/cloud_filelist_play_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/video_play_main"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listview_cloud_filelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvew_cloud_filelist_null"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/file_null"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            layout="@layout/operatefile_done"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            layout="@layout/operatefilefolder"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>
